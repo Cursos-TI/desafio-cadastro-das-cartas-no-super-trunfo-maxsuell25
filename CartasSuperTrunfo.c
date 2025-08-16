@@ -1,22 +1,128 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+int main(){
 
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
-    return 0;
+    char carta1[5], carta2[5];
+    char estado1, estado2;
+    int populacao1, populacao2;
+    float area1, area2;
+    float PIB1, PIB2;
+    int numero1, numero2;
+    float densidade = populacao1 / area1;
+    float capita = PIB1 / populacao1;
+    float densidade2 = populacao2 / area2;
+    float capita2 = PIB2 / populacao2;
+    
+
+    printf("CADASTRE A PRIMEIRA CARTA: \n");
+
+    printf("Digite o Codigo da carta: \n");
+    scanf("%s", &carta1);
+    printf("O codigo da carta e: %s \n");
+
+    printf("Digite o nome do Estado: \n");
+    scanf("%s", &estado1);
+    printf("O nome do Estado e: %s \n");
+
+    printf("Digite a populacao: \n");
+    scanf("%s", &populacao1);
+    printf("A Populacao e de: %s\n");
+
+    printf("Digite a area: \n");
+    scanf("%s", &area1);
+    printf("A Area e de: %s km2 \n");
+    
+    printf("Digite o PIB: \n");
+    scanf("%s", &PIB1);
+    printf("O PIB e de: %s \n");
+
+    printf("Digite o numero de pontos turisticos: \n");
+    scanf("%s", &numero1);
+    printf("O Numero de pontos turisticos e de: %s \n");
+
+
+
+
+    //abaixo segue as informacoes da primeira carta
+    printf("CADASTRE A SEGUNDA CARTA: \n");
+
+    printf("Digite o Codigo da carta: \n");
+    scanf("%s", &carta2);
+    printf("O Codigo da carta e: %s \n");
+
+    printf("Digite o nome do Estado: \n");
+    scanf("%s", &estado2);
+    printf("O nome do Estado e: %s \n");
+
+    printf("Digite a populacao: \n");
+    scanf("%s", &populacao2);
+    printf("A populacao e de: %s \n");
+
+    printf("Digite a area: \n");
+    scanf("%s", &area2);
+    printf("A area e de: %s \n");
+    
+    printf("Digite o PIB: \n");
+    scanf("%s", &PIB2);
+    printf("O PIB e de: \n");
+
+    printf("Digite o numero de pontos turisticos: \n");
+    scanf("%s", &numero2);
+    printf("O numero de pontos turisticos e de: %s \n");
+
+    //operadores aritmeticos
+    float divisao1 = densidade = populacao1 /= area1;
+    int divisao2 = capita = PIB1 /= populacao1;
+    int divisao3 = densidade2 = populacao2 /= area2;
+    int divisao4 = capita = PIB2 /= populacao2;
+
+
+
+    //densidade populacional / populacao / area
+    // PIB per capita / PIB / populacao
+
+    printf("Densidade Populacional Carta01: %f\n", divisao1);
+    printf("PIB per Capita Carta01: %f\n", divisao2);
+    printf("Densidade Populacional Carta02: %f\n", divisao3);
+    printf("PIB per Capita Carta02: %f\n", divisao4);
+
+    //apos isso dado o resultado da densidade e pib per capita
+    // o resultado final aparece no terminal
+
+
+    //calculando os super poderes das cartas
+
+    float resultado1 = populacao1 > populacao2;
+    float resultado2 = area1 > area2;
+    float resultado3 = PIB1 > PIB2;
+    float resultado4 = numero1 > numero2;
+    float resultado5 = densidade < densidade2;
+
+
+    printf("Populacao: Vence a Carta %d\n", resultado1);
+    printf("Area: Vence a Carta %d\n", resultado2);
+    printf("PIB: Vence a Carta %d\n", resultado3);
+    printf("Pontos Turisticos: Vence a Carta %d\n", resultado4);
+    printf("Densidade: Vence a Carta %d\n", resultado5);
+    
+
+
+
+
+
+
+    
+
+    
+
+
+
+    
+
+
+
+    
+
+
 }
