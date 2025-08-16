@@ -15,7 +15,7 @@ int main(){
     float capita2 = PIB2 / populacao2;
     
 
-    printf("PRIMEIRA CARTA: \n");
+    printf("CADASTRE A PRIMEIRA CARTA: \n");
 
     printf("Digite o Codigo da carta: \n");
     scanf("%s", &carta1);
@@ -45,7 +45,7 @@ int main(){
 
 
     //abaixo segue as informacoes da primeira carta
-    printf("SEGUNDA CARTA: \n");
+    printf("CADASTRE A SEGUNDA CARTA: \n");
 
     printf("Digite o Codigo da carta: \n");
     scanf("%s", &carta2);
@@ -85,10 +85,28 @@ int main(){
     printf("Densidade Populacional Carta01: %f\n", divisao1);
     printf("PIB per Capita Carta01: %f\n", divisao2);
     printf("Densidade Populacional Carta02: %f\n", divisao3);
-    printf("PIB per Capita Carta02: %f", divisao4);
+    printf("PIB per Capita Carta02: %f\n", divisao4);
 
     //apos isso dado o resultado da densidade e pib per capita
     // o resultado final aparece no terminal
+
+
+    //calculando os super poderes das cartas
+
+    float resultado1 = populacao1 > populacao2;
+    float resultado2 = area1 > area2;
+    float resultado3 = PIB1 > PIB2;
+    float resultado4 = numero1 > numero2;
+    float resultado5 = densidade < densidade2;
+
+
+    printf("Populacao: Vence a Carta %d\n", resultado1);
+    printf("Area: Vence a Carta %d\n", resultado2);
+    printf("PIB: Vence a Carta %d\n", resultado3);
+    printf("Pontos Turisticos: Vence a Carta %d\n", resultado4);
+    printf("Densidade: Vence a Carta %d\n", resultado5);
+    
+
 
 
 
