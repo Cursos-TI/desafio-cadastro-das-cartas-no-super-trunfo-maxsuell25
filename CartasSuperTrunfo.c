@@ -93,18 +93,52 @@ int main(){
 
     //calculando os super poderes das cartas
 
-    float resultado1 = populacao1 > populacao2;
-    float resultado2 = area1 > area2;
-    float resultado3 = PIB1 > PIB2;
-    float resultado4 = numero1 > numero2;
-    float resultado5 = densidade < densidade2;
+    char Estado1, Estado2;
+    int Populacao1, Populacao2;
+    float Area1, Area2;
+    float PIIB1, PIIB2;
+    int Numero1, Numero2;
 
 
-    printf("Populacao: Vence a Carta %d\n", resultado1);
-    printf("Area: Vence a Carta %d\n", resultado2);
-    printf("PIB: Vence a Carta %d\n", resultado3);
-    printf("Pontos Turisticos: Vence a Carta %d\n", resultado4);
-    printf("Densidade: Vence a Carta %d\n", resultado5);
+    if (Estado1 > Estado2) {
+        printf("Estado: Carta 1 Venceu\n");
+    }else {
+        printf("Estado: Carta 2 Venceu\n")
+
+        /* code */
+    }
+
+    if (populacao1 > populacao2){
+        printf("Populacao: Carta 1 Venceu\n");
+    } else {
+        printf("Populacao: Carta 2 Venceu\n");    
+        /* code */
+    }
+
+    if (Area1 > Area2){
+        printf("Area: Carta 1 Venceu\n");
+    }else {
+        printf("Area: Carta 2 Venceu\n");    
+        /* code */
+    }
+    
+    if (PIIB1 > PIIB2){
+        printf("PIB: Carta 1 Venceu\n");
+    }else {
+        printf("PIB: Carta 2 Venceu\n");
+
+        /* code */
+    }
+
+    if (Numero1 > Numero2){
+        printf("Numero de Pontos Turisticos: Carta 1 Venceu\n");
+    }else {
+        printf("Numero de Pontos Turisticos: Carta 2 Venceu\n");    
+        /* code */
+    }
+    
+    
+    
     
 
 
