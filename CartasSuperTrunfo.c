@@ -136,6 +136,10 @@ int main(){
         printf("Numero de Pontos Turisticos: Carta 2 Venceu\n");    
         /* code */
     }
+
+    printf("Carta 1: O pais e o Brasil\n");
+    printf("Carta 2: O pais e o Brasil\n");
+    
     
     
     
