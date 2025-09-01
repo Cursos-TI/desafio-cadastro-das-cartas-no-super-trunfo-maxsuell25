@@ -103,9 +103,7 @@ int main(){
     if (Estado1 > Estado2) {
         printf("Estado: Carta 1 Venceu\n");
     }else {
-        printf("Estado: Carta 2 Venceu\n")
-
-        /* code */
+        printf("Estado: Carta 2 Venceu\n");
     }
 
     if (populacao1 > populacao2){
